@@ -1,2 +1,214 @@
-# Cartita-especial-3
-Para mi chikilla linda :3
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Notebook by myeya</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Comic Sans MS';
+background-color: #fefefe;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.portada {
+width: 400px;
+height: 600px;
+background: repeating-linear-gradient(
+0deg,
+#d4ecff,
+#d4ecff 30px,
+#ffffff 30px,
+#ffffff 60px
+);
+border: 10px solid #ffccdd;
+border-left: 60px solid #ffccdd;
+border-radius: 20px;
+position: relative;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+padding: 20px;
+cursor: pointer;
+}
+.titulo {
+font-size: 2.5em;
+color: #ff80aa;
+font-weight: bold;
+text-align: center;
+letter-spacing: 4px;
+margin-top: 10px;
+}
+.titulo span {
+display: inline-block;
+background-color: #ffe4f0;
+border-radius: 10px;
+padding: 5px 10px;
+margin: 0 3px;
+transform: rotate(-5deg);
+}
+.imagen {
+width: 100px;
+margin: 15px auto;
+display: block;
+}
+.etiqueta {
+width: 80%;
+height: 50px;
+margin: 20px auto;
+border: 2px solid pink;
+border-radius: 10px;
+background-color: white;
+line-height: 50px;
+font-size: 1.1em;
+color: #ff66aa;
+text-align: center;
+}
+.decoracion {
+position: absolute;
+font-size: 2em;
+}
+.corazon {
+color: #ff99cc;
+}
+.estrella {
+color: #aeefff;
+}
+.inferior {
+position: absolute;
+bottom: 20px;
+right: 30px;
+font-size: 0.9em;
+color: #f199c9;
+}
+#paginaInterior {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: #ffffff;
+z-index: 10;
+display: none;
+justify-content: center;
+align-items: center;
+}
+.cuaderno-abierto {
+display: flex;
+width: 800px;
+height: 600px;
+box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+border-radius: 10px;
+overflow: hidden;
+}
+.hoja {
+width: 400px;
+height: 600px;
+background: repeating-linear-gradient(
+to bottom,
+#fff,
+#fff 25px,
+#ffc0cb4d 25px,
+#ffc0cb4d 26px
+);
+border-left: 8px solid #ffb6d9;
+border-right: 8px solid #ffb6d9;
+padding: 30px;
+font-size: 1em;
+color: #555;
+overflow-y: auto;
+}
+.hoja h2 {
+color: #ff69b4;
+text-align: center;
+margin-bottom: 10px;
+}
+.cerrar {
+position: absolute;
+top: 20px;
+right: 30px;
+background-color: white;
+color: #ff69b4;
+border: 2px solid pink;
+border-radius: 10px;
+padding: 8px 16px;
+font-size: 1em;
+cursor: pointer;
+z-index: 20;
+}
+@media (max-width: 850px) {
+.cuaderno-abierto {
+flex-direction: column;
+width: 90%;
+height: auto;
+}
+.hoja {
+width: 100%;
+height: 400px;
+}
+}
+</style>
+</head>
+<body>
+<div class="portada" id="portada" onclick="abrirCuaderno()">
+<div class="titulo">
+<span>N</span><span>O</span><span>T</span><span>E</span> BOOK
+</div>
+<img class="imagen" src="https://pngimg.com/uploads/hello_kitty/hello_kitty_PNG20.png" alt="Peluche Kawaii">
+<div class="etiqueta">DEDICADO A AGUSITA</div>
+<img class="imagen" src="https://pngimg.com/uploads/hello_kitty/hello_kitty_PNG43.png" alt="Sundae Kawaii">
+<div class="decoracion corazon" style="top: 20px; left: 80px;"> </div>
+<div class="decoracion estrella" style="top: 50px; right: 50px;">★</div>
+<div class="decoracion estrella" style="bottom: 80px; left: 40px;">★</div>
+<div class="decoracion corazon" style="bottom: 60px; right: 80px;"> </div>
+<div class="inferior">hecho por fernan jeje :3</div>
+</div>
+<div id="paginaInterior">
+<button class="cerrar" onclick="cerrarCuaderno()">✿ Cerrar</button>
+<div class="cuaderno-abierto">
+<div class="hoja">
+<h2>✧ Lo que siento...✧</h2>
+<p> No sé exactamente cómo empezar estas palabras sin que se me enrede el alma, pero necesito decirte lo que llevo dentro desde hace tiempo. Desde que llegaste a mi vida, algo cambió en mí. No solo ocupas mis pensamientos, sino que llenas mi corazón de una forma que nunca antes había sentido.
+Hay algo en ti que me desarma y me reconstruye al mismo tiempo. Tu sonrisa tiene el poder de calmar mis días más difíciles, y tu voz, aunque la escuche solo un momento, me acompaña como un eco suave que me recuerda que no estoy sola en este mundo.
+Lo que siento por ti algo tan honesto. </p>
+<img src="Athena.webp.jpeg" 
+style="width: 70px; border: 4px solid #aeefff; border-radius: 15px; margin: 15px 10px;">
+<img src="PENELOPEE.webp.jpeg" 
+style="width: 70px; border: 4px solid #aeefff; border-radius: 15px; margin: 15px 10px;">
+<img src="gojo.webp.jpeg" 
+style="width: 60px; border: 4px solid #ffd6ec; border-radius: 50%; margin: 15px 10px;">
+<h2>TE ADORO MÁS DE LO QUE TE IMAGINAS</h2> 
+</div>
+<div class="hoja"> 
+<h2>✧¡FELIZ SAN VALENTIN!✧</h2> 
+<p>Por más que solo seamos amigos sé que no somos solo eso y que capaz seamos más que eso, y ojala algún día ya no ser solo tu amigo pero es algo complicado así que mejor solo me conformo con ser solo tu amigo, pero eso no quita el hecho de que te voy a amar cuidar y estar contigo siempre, seguiré amándote en silencio si es necesario… .</p>
+<img src="Gato.webp.jpeg" 
+style="width: 70px; border: 4px solid #ffe4f0; border-radius: 15px; margin: 15px 10px;">
+<img src="https://n9.cl/735yy" 
+style="width: 65px; border: 4px solid #ffccdd; border-radius: 15px; margin: 15px 10px;">
+<img src="https://n9.cl/jzp6j" 
+style="width: 65px; border: 4px solid #b8e0ff; border-radius: 15px; margin: 15px 10px;">
+<p> Quiero aprovechar esta carta para decirte lo mucho que te amo y te aprecio, de lo feliz que me haces, y también agradecerte todos los momentos bonitos que pasamos, agradecerte también por siempre soportarme, gracias por estar a mi lado y una vez mas te amo mi chikilla…💖💗. Eres una niña divina, que se esfuerza cada día más, que siempre intenta darle ánimos a los demás, eres la mejor hija, amiga, novia del mundo, admiro quien eres, amo tus lindos sentimientos y eso de que seas sensible es la parte más linda y tierna de ti, simplemente amo todo de ti :3
+<p> Feliz aniversario, mi princesita hermosa :3. </p>
+<p> Con cariño,</p>
+<p> FERNAN.</p>
+</div>
+</div>
+<script>
+function abrirCuaderno() {
+document.getElementById('portada').style.display = 'none';
+document.getElementById('paginaInterior').style.display = 'flex';
+}
+function cerrarCuaderno() {
+document.getElementById('paginaInterior').style.display = 'none';
+document.getElementById('portada').style.display = 'block';
+}
+</script>
+</body>
+</html>
+
